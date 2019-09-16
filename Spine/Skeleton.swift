@@ -31,6 +31,7 @@ public class Skeleton: SKNode {
     public init(_ model: SpineModel, atlas folder: String? = nil) {
 
         super.init()
+        self.createSkeleton(model)
         self.createBones(model)
         self.createSlots(model)
         self.createSkins(model, atlas: folder)
@@ -46,6 +47,7 @@ public class Skeleton: SKNode {
     public init(_ model: SpineModel, _ atlases: [String : SKTextureAtlas]) {
         
         super.init()
+        self.createSkeleton(model)
         self.createBones(model)
         self.createSlots(model)
         self.createSkins(model, atlases)
@@ -82,11 +84,17 @@ public class Skeleton: SKNode {
     }
 
     //MARK: - Private
-    
+
+    var size: CGSize?
     var slots: [Slot]? { get { return self["//\(Slot.prefix)*"] as? [Slot] } }
     var skins: [Skin]?
     var animations: [Animation]?
-    
+
+    func createSkeleton(_ model: SpineModel)  {
+
+        self.size = model.skeleton.size
+    }
+
     func createBones(_ model: SpineModel)  {
         
         if let bonesModels = model.bones {

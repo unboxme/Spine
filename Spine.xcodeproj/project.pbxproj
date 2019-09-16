@@ -197,6 +197,7 @@
 		77F1D5F3201A490400AF499B /* Spine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F1D5E9201A490400AF499B /* Spine.framework */; };
 		77F1D5FA201A490400AF499B /* Spine.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F1D5EC201A490400AF499B /* Spine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77F75105203760050065AECE /* Defaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F75104203760050065AECE /* Defaultable.swift */; };
+		B8EA1A370684E7E47EB69A0A /* Skeleton+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EA172230AA623C7F110ED8 /* Skeleton+Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +295,7 @@
 		77F1D5F2201A490400AF499B /* SpineTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpineTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F1D5F9201A490400AF499B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77F75104203760050065AECE /* Defaultable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaultable.swift; sourceTree = "<group>"; };
+		B8EA172230AA623C7F110ED8 /* Skeleton+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Skeleton+Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +472,7 @@
 				7711235320EEC00C00BFF103 /* SpineModel+Atlases.swift */,
 				7711235820EEC13000BFF103 /* SkinModel+Atlases.swift */,
 				7711235D20EEC1F200BFF103 /* SkinSlotModel+Atlases.swift */,
+				B8EA172230AA623C7F110ED8 /* Skeleton+Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1050,6 +1053,7 @@
 				774D0C92203D95A200EC5156 /* Skeleton+Points.swift in Sources */,
 				77869DE92037856F00404AC8 /* Color.swift in Sources */,
 				774D0C90203CD62900EC5156 /* Skeleton+Defaultable.swift in Sources */,
+				B8EA1A370684E7E47EB69A0A /* Skeleton+Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
